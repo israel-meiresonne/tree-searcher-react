@@ -1,9 +1,9 @@
 # Tree Searcher
 <!-- ❌ Don't Delete This Comment ❌
 Project short description:
-React component to search for and display nodes from a tree.
+  React component to search for and display nodes from a tree.
 Project Topics (Tags):
-css html php javascript react
+  css html php javascript react
 -->
 
 This project receives a list of nodes from a tree and allows searching and displaying the tree hierarchy.
