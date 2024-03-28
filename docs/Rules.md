@@ -1,4 +1,6 @@
-#Challenge:
+# Challenge
+
+## Rules
 
 - nodes.js contains an array with nodes of a tree (parent: null are 'root' nodes)
 - can you visualize the tree?
@@ -8,7 +10,8 @@
 - pure react, without using a lot of extra packages (e.g. no 'react-tree-view')
 - use a good component structure (functional components).
 
-#Example:
+## Example
+
 Tree:
 
 - Root
