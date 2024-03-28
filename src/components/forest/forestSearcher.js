@@ -9,6 +9,9 @@ import { treeNodes } from "../../nodes";
  */
 const { roots, idToNodes } = buildTree(treeNodes);
 const defaultRoots = [];
+for (let root of roots) {
+  defaultRoots.push({ ...root, children: [] });
+}
 
 export default function ForestSearcher() {
   const [rootsState, setRoots] = useState(defaultRoots);
