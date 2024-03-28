@@ -37,4 +37,4 @@ This project receives a list of nodes from a tree and allows searching and displ
 
 ### Expanded search
 
-[<img src="docs/rsc/tree-expanded.png" width="200">](docs/rsc/tree-expanded.png)
+[<img src="docs/rsc/tree-expanded.png" width="350">](docs/rsc/tree-expanded.png)
