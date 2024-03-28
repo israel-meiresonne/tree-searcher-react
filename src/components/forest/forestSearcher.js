@@ -20,7 +20,6 @@ export default function ForestSearcher() {
     }
     setRoots(newRoots);
   }
-  let i = 0;
   return (
     <div className="App">
       <div className="container-input">
