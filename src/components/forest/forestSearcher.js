@@ -3,7 +3,11 @@ import Tree from "./tree";
 import { buildTree, filterNodes } from "./forestHelper";
 import { treeNodes } from "../../nodes";
 
-const idToNodes = buildTree(treeNodes).idToNodes;
+/**
+ * @param idToNodes Use a dictionary (object) to store all nodes to maintain
+ * a lookup time complexity of O(1)
+ */
+const { roots, idToNodes } = buildTree(treeNodes);
 const defaultRoots = [];
 
 export default function ForestSearcher() {
