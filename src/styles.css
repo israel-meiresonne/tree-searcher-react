@@ -1,0 +1,57 @@
+:root {
+  --broder-style: solid;
+  --broder-width: 2px;
+  --broder-color: red;
+  --broder-triple: var(--broder-width) var(--broder-style) var(--broder-color);
+}
+.App {
+  font-family: sans-serif;
+}
+.wrapper-tree {
+  margin-bottom: 20px;
+}
+.wrapper-node {
+  position: relative;
+}
+.node {
+  position: relative;
+  height: 20px;
+}
+.children > .wrapper-node {
+  margin-left: 20px;
+}
+.children > .wrapper-node::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 7px;
+  height: 100%;
+  border-left: var(--broder-triple);
+}
+.children > .wrapper-node > .node::before {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 7px;
+  height: 10px;
+  border-top: var(--broder-triple);
+  border-left: var(--broder-width) var(--broder-style) white;
+}
+.arrow::after {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  width: 5px;
+  height: 5px;
+  border-top: var(--broder-triple);
+  border-right: var(--broder-triple);
+}
+.arrow-right::after {
+  transform: rotate(45deg);
+}
+.arrow-down::after {
+  transform: rotate(135deg);
+}
