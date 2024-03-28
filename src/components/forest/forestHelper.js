@@ -18,6 +18,9 @@ export function buildTree(treeNodes) {
   return { roots, idToNodes };
 }
 
+/**
+ * To get the parent of a given node up to the root
+ */
 export function nodeToRoot(node, idToNodes, pathNodes = {}) {
   pathNodes[node._id] = node;
   if (node.parent) {
@@ -28,6 +31,9 @@ export function nodeToRoot(node, idToNodes, pathNodes = {}) {
   }
 }
 
+/**
+ * To get all matching nodes and their parent up to the root
+ */
 export function filterNodes(search, treeNodes, idToNodes) {
   let pathNodes = {};
   for (const node of treeNodes) {
